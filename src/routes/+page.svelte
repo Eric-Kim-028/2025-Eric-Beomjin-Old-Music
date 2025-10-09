@@ -1,2 +1,2 @@
 <div>hello</div>
-<button onclick={x++}>+</button>
+<button>+</button>
