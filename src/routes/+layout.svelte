@@ -9,16 +9,9 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<div class="menu">
+<div class="flex space-x-5 border-b p-2">
 	<a href="/">Home</a>
-	<a href="/about">About</a>
+	<a href="/favorites">Fav</a>
 </div>
 
 {@render children?.()}
-
-<style>
-	.menu {
-		background-color: lightgray;
-		padding: 10px;
-	}
-</style>
