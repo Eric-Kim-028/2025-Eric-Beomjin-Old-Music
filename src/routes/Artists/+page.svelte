@@ -1,4 +1,4 @@
-<center class="size">Users section</center>
+<center class="size">Artist section</center>
 <div class="margin"></div>
 <center class="size"
 	>Search:<input placeholder="Search up artists :)" type="text" class="border" /></center
