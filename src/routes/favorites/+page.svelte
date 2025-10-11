@@ -1,4 +1,4 @@
-<center class="size">My favorites section</center>
+<center class="big-size">My favorites section</center>
 <div class="my-10"></div>
 <center class="size">Recommended playlists:</center>
 <div class="flex justify-evenly">
@@ -46,3 +46,12 @@
 		<img height="100" width="100" src="https://emojiguide.org/images/emoji/t/cgn7tk18vtwt.png" />
 	</div>
 </div>
+
+<style>
+	.size{
+		font-size:30px;
+	}
+	.big-size{
+		font-size:35px;
+	}
+</style>

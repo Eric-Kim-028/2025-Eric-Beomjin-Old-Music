@@ -11,7 +11,7 @@
 
 <div class="flex space-x-5 border-b p-2">
 	<a href="/">Home</a>
-	<a href="/favorites">Fav</a>
+	<a href="/favorites">Favorites</a>
 	<a href="/Artists">Artists</a>
 	<a href="/user">Users</a>
 	<a href="/About">About</a>

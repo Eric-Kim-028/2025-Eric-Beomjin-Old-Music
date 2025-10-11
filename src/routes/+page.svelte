@@ -61,3 +61,9 @@
 	<div class="size">About</div>
 	<div class="size">Contact us</div>
 </div>
+
+<style>
+	.size{
+		font-size:30px;
+	}
+</style>
