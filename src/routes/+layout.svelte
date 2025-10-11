@@ -13,8 +13,9 @@
 	<a href="/">Home</a>
 	<a href="/favorites">Fav</a>
 	<a href="/Artists">Artists</a>
-	<a href="/Contact">Contact Us</a>
 	<a href="/user">Users</a>
+	<a href="/Contact">Contact Us</a>
+	<a href="/About">About</a>
 </div>
 
 
