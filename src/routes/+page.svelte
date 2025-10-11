@@ -38,9 +38,9 @@
 	<div class="h-8 w-12 border"></div>
 	<div class="h-8 w-12 border"></div>
 </div>
-<div class="my-10 flex"></div>
+<div class="my-5 flex"></div>
 <div class="flex flex-col justify-center" />
-<button type="button" class="collapsible size">Categories</button>
+<div class="size flex justify-center">Categories</div>
 <div class="content">
 	<div class="flex flex-wrap justify-evenly">
 		<div class="h-8 w-12 border"></div>
