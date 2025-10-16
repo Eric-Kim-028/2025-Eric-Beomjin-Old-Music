@@ -28,51 +28,6 @@
 			src: 'https://www.youtube.com/embed/rY0WxgSXdEE?si=9wGZ4tzcQW6EDw9_',
 			liked: false,
 			era: '1980s'
-		},
-		{
-			artist: 'Bon Jovi',
-			name: 'Livin’ on a Prayer',
-			src: 'https://www.youtube.com/embed/lDK9QqIzhwk?si=6llbNQzJ6ZLkWQFM',
-			liked: false,
-			era: '1980s'
-		},
-		{
-			artist: 'A-ha',
-			name: 'Take On Me',
-			src: 'https://www.youtube.com/embed/djV11Xbc914?si=hWJtIl0OfV8Tg2KJ',
-			liked: false,
-			era: '1980s'
-		},
-		{
-			artist: 'Cyndi Lauper',
-			name: 'Girls Just Want to Have Fun',
-			src: 'https://www.youtube.com/embed/PIb6AZdTr-A?si=mdP-9u9LwWZcvBGW',
-			liked: false,
-			era: '1980s'
-		},
-
-		// 🎶 1990s
-
-		{
-			artist: 'Backstreet Boys',
-			name: 'I Want It That Way',
-			src: 'https://www.youtube.com/embed/4fndeDfaWCg?si=4odxE0It7sRzyzC4',
-			liked: false,
-			era: '1990s'
-		},
-		{
-			artist: 'Spice Girls',
-			name: 'Wannabe',
-			src: 'https://www.youtube.com/embed/gJLIiF15wjQ?si=3W2e7jLPx1OOPZgr',
-			liked: false,
-			era: '1990s'
-		},
-		{
-			artist: 'Red Hot Chili Peppers',
-			name: 'Californication',
-			src: 'https://www.youtube.com/embed/YlUKcNNmywk?si=KmgH1IRmZjEjEY0o',
-			liked: false,
-			era: '1990s'
 		}
 	];
 </script>
@@ -103,10 +58,10 @@
 				<button
 					class="btn btn-sm"
 					class:btn-success={v.liked}
-					class:btn-primary={!v.liked}
+					class:btn-error={!v.liked}
 					onclick={() => (v.liked = !v.liked)}
 				>
-					{v.liked ? 'LIKED' : 'LIKE'}
+					{v.liked ? 'delete' : 'delete'}
 				</button>
 			</div>
 		</div>
