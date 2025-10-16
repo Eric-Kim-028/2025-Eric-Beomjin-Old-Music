@@ -112,5 +112,3 @@
 		</div>
 	{/each}
 </div>
-
-<h1>90s Music</h1>
