@@ -9,15 +9,16 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<div class="flex space-x-5 border-b p-2">
-	<a href="/">Home</a>
-	<a href="/favorites">Favorites</a>
-	<a href="/Artists">Artists</a>
-	<a href="/user">Users</a>
-	<a href="/About">About</a>
-	<a href="/Contact">Contact Us</a>
-	<a href="/Playlist">Create your playlist</a>
+<div class="navbar bg-primary text-primary-content shadow-sm">
+	<div class="flex-1">
+		<a href="/" class="btn text-xl btn-ghost">Music8090</a>
+	</div>
+	<div class="flex-none">
+		<ul class="menu menu-horizontal px-1">
+			<li><a href="/favorites">Favorites</a></li>
+			<li><a href="/votes">Votes</a></li>
+		</ul>
+	</div>
 </div>
-
 
 {@render children?.()}

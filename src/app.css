@@ -1,3 +1,15 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
-@plugin "daisyui";
+@plugin "daisyui" {
+	themes:
+		lofi --default,
+		lofi --prefersdark;
+}
+
+h1 {
+	@apply text-3xl;
+}
+
+h2 {
+	@apply text-2xl;
+}
