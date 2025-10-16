@@ -5,7 +5,7 @@
 <textarea class="resize-both width border" placeholder="Type in any questions, comments, and concerns!"></textarea>
 <div class="margin"></div>
 <div class="align-right">
-  <button type="button" class="little-big-size button">Submit</button>
+  <button type="button" class="little-big-size button">Save you playlist</button>
 </div>
 </div>
 

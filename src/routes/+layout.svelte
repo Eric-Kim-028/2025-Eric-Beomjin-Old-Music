@@ -16,6 +16,7 @@
 	<a href="/user">Users</a>
 	<a href="/About">About</a>
 	<a href="/Contact">Contact Us</a>
+	<a href="/Playlist">Create your playlist</a>
 </div>
 
 
