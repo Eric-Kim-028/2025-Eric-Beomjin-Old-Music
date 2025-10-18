@@ -6,28 +6,32 @@
 			name: 'Billie Jean',
 			src: 'https://www.youtube.com/embed/Zi_XLOBDo_Y?si=Zt1FPG8Q9QKX3FJg',
 			liked: false,
-			era: '1980s'
+			era: '1980s',
+			likes: 2
 		},
 		{
 			artist: 'Nirvana',
 			name: 'Smells Like Teen Spirit',
 			src: 'https://www.youtube.com/embed/hTWKbfoikeg?si=2azDHQiaIG7kSB6y',
 			liked: false,
-			era: '1990s'
+			era: '1990s',
+			likes: 3
 		},
 		{
 			artist: 'Oasis',
 			name: 'Wonderwall',
 			src: 'https://www.youtube.com/embed/bx1Bh8ZvH84?si=7D5xZyN3GtxGrxkF',
 			liked: false,
-			era: '1990s'
+			era: '1990s',
+			likes: 5
 		},
 		{
 			artist: 'Queen',
 			name: 'Another One Bites the Dust',
 			src: 'https://www.youtube.com/embed/rY0WxgSXdEE?si=9wGZ4tzcQW6EDw9_',
 			liked: false,
-			era: '1980s'
+			era: '1980s',
+			likes: 1
 		},
 		{
 			artist: 'Bon Jovi',
@@ -75,6 +79,8 @@
 			era: '1990s'
 		}
 	];
+
+	export { arr };
 </script>
 
 <div class="grid grid-cols-2 gap-2">
@@ -104,9 +110,25 @@
 					class="btn btn-sm"
 					class:btn-success={v.liked}
 					class:btn-primary={!v.liked}
-					onclick={() => (v.liked = !v.liked)}
+					onclick={() => {
+						v.liked = !v.liked;
+						if (v.liked) {
+							v.likes = (v.likes || 0) + 1;
+						} else {
+							v.likes = (v.likes || 1) - 1;
+						}
+						let likedSongs = localStorage.getItem('liked-songs');
+						likedSongs = likedSongs ? JSON.parse(likedSongs) : [];
+						if (v.liked) {
+							likedSongs.push(v.name);
+						} else {
+							likedSongs = likedSongs.filter((id) => id !== v.name);
+						}
+						localStorage.setItem('liked-songs', JSON.stringify(likedSongs));
+					}}
 				>
 					{v.liked ? 'LIKED' : 'LIKE'}
+					{v.likes || 0}
 				</button>
 			</div>
 		</div>
